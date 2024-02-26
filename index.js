@@ -58,6 +58,10 @@ app.post("/webhook", (req, res) => {
 
 })
 
+app.get("/", (req, res) => {
+  res.send("webhook is working ! ")
+})
+
 app.listen(port, () => {
   console.log("webhook is listiing on port 8000");
 });
